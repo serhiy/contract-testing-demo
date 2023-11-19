@@ -6,7 +6,7 @@ import au.com.dius.pact.consumer.junit5.PactConsumerTestExt;
 import au.com.dius.pact.consumer.junit5.PactTestFor;
 import au.com.dius.pact.core.model.V4Pact;
 import au.com.dius.pact.core.model.annotations.Pact;
-import com.thousandeyes.pact.orders.integration.ProductClient;
+import com.thousandeyes.pact.orders.integration.ProductsClient;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +22,10 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 @ExtendWith(PactConsumerTestExt.class)
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class ProductClientPactTest {
+public class ProductsClientPactTest {
 
     @Autowired
-    private ProductClient productClient;
+    private ProductsClient productsClient;
 
     @Pact(provider = "products-service", consumer = "orders-service")
     public V4Pact getExistingProduct(PactDslWithProvider builder) {
@@ -48,7 +48,7 @@ public class ProductClientPactTest {
     @Test
     @PactTestFor(pactMethod = "getExistingProduct", port="8080")
     void getExistingProduct(MockServer mockServer) {
-        productClient.getProduct(1);
+        productsClient.getProduct(1);
     }
 
     @Pact(provider = "products-service", consumer = "orders-service")
@@ -67,7 +67,7 @@ public class ProductClientPactTest {
     @PactTestFor(pactMethod = "getNonExistingProduct", port="8080")
     void getNonExistingProduct(MockServer mockServer) {
         try {
-            productClient.getProduct(2);
+            productsClient.getProduct(2);
         } catch (Exception e) {
             e.printStackTrace();
         }

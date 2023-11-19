@@ -1,7 +1,7 @@
 package com.thousandeyes.pact.orders.service;
 
 import com.thousandeyes.pact.orders.domain.Order;
-import com.thousandeyes.pact.orders.integration.ProductClient;
+import com.thousandeyes.pact.orders.integration.ProductsClient;
 import com.thousandeyes.pact.orders.integration.dto.Product;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -14,11 +14,11 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class OrdersService {
 
-    private final ProductClient productClient;
+    private final ProductsClient productsClient;
 
     public Order processOrder(Map<Integer, Integer> products, Integer customerId) {
         var productPrices = products.keySet().stream()
-                .map(productClient::getProduct)
+                .map(productsClient::getProduct)
                 .collect(Collectors.toMap(Product::getId, Product::getPrice));
 
         var totalCost = products.keySet().stream()
