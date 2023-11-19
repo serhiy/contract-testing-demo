@@ -45,7 +45,7 @@ class OrdersControllerTest {
                         .content(TestDataReader.readFile("create-order.json")))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.customerId", is(543)))
-                .andExpect(jsonPath("$.products", hasEntry(1, 2)))
+                .andExpect(jsonPath("$.products", hasEntry("1", 2)))
                 .andExpect(jsonPath("$.totalCost", is(1.00d)));
     }
 
