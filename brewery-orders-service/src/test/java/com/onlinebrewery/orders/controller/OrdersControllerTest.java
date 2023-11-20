@@ -1,8 +1,8 @@
-package com.thousandeyes.pact.orders.controller;
+package com.onlinebrewery.orders.controller;
 
-import com.thousandeyes.pact.orders.TestDataReader;
-import com.thousandeyes.pact.orders.integration.ProductsClient;
-import com.thousandeyes.pact.orders.integration.dto.Product;
+import com.onlinebrewery.orders.TestDataReader;
+import com.onlinebrewery.orders.integration.ProductsClient;
+import com.onlinebrewery.orders.integration.dto.Product;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

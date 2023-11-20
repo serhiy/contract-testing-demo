@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.orders.domain;
+package com.onlinebrewery.orders.domain;
 
 import lombok.*;
 

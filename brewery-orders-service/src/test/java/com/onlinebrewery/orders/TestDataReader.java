@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.orders;
+package com.onlinebrewery.orders;
 
 import java.io.IOException;
 

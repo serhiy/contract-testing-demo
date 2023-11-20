@@ -1,6 +1,6 @@
-package com.thousandeyes.pact.orders;
+package com.onlinebrewery.orders;
 
-import com.thousandeyes.pact.orders.integration.ProductsClient;
+import com.onlinebrewery.orders.integration.ProductsClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

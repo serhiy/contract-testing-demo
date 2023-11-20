@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.product;
+package com.onlinebrewery.products;
 
 import au.com.dius.pact.provider.junit5.PactVerificationContext;
 import au.com.dius.pact.provider.junitsupport.Consumer;
@@ -11,8 +11,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import com.thousandeyes.pact.product.domain.Product;
-import com.thousandeyes.pact.product.repository.ProductsRepository;
+import com.onlinebrewery.products.domain.Product;
+import com.onlinebrewery.products.repository.ProductsRepository;
 
 import java.util.List;
 

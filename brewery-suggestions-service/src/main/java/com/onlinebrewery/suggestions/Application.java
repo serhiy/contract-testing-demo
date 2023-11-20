@@ -1,6 +1,6 @@
-package com.thousandeyes.pact.suggestions;
+package com.onlinebrewery.suggestions;
 
-import com.thousandeyes.pact.suggestions.integration.ProductClient;
+import com.onlinebrewery.suggestions.integration.ProductClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

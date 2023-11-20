@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.suggestions.integration.dto;
+package com.onlinebrewery.suggestions.integration.dto;
 
 
 import lombok.Data;

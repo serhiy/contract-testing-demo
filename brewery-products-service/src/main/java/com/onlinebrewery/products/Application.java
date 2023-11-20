@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.product;
+package com.onlinebrewery.products;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

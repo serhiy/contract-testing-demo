@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.orders.integration.dto;
+package com.onlinebrewery.orders.integration.dto;
 
 
 import lombok.AllArgsConstructor;

@@ -31,8 +31,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.26'
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
+	testLogging.showStandardStreams = true
 }
 
 pact {

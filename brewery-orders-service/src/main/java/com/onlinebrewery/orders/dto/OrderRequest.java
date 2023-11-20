@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.orders.dto;
+package com.onlinebrewery.orders.dto;
 
 import lombok.Data;
 

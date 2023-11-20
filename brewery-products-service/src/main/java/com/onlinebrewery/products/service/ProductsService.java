@@ -1,9 +1,9 @@
-package com.thousandeyes.pact.product.service;
+package com.onlinebrewery.products.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import com.thousandeyes.pact.product.domain.Product;
-import com.thousandeyes.pact.product.repository.ProductsRepository;
+import com.onlinebrewery.products.domain.Product;
+import com.onlinebrewery.products.repository.ProductsRepository;
 
 import java.util.List;
 import java.util.Optional;

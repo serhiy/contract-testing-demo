@@ -5,7 +5,7 @@ plugins {
 	id "au.com.dius.pact" version "4.3.6"
 }
 
-group = 'com.codingdaddy.pact'
+group = 'com.onlinebrewery.suggestions'
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -31,8 +31,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.26'
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
+	testLogging.showStandardStreams = true
 }
 
 pact {

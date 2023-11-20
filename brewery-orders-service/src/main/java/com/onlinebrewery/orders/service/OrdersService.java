@@ -1,8 +1,8 @@
-package com.thousandeyes.pact.orders.service;
+package com.onlinebrewery.orders.service;
 
-import com.thousandeyes.pact.orders.domain.Order;
-import com.thousandeyes.pact.orders.integration.ProductsClient;
-import com.thousandeyes.pact.orders.integration.dto.Product;
+import com.onlinebrewery.orders.domain.Order;
+import com.onlinebrewery.orders.integration.ProductsClient;
+import com.onlinebrewery.orders.integration.dto.Product;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

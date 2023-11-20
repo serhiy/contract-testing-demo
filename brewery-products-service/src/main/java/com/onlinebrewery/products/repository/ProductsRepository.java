@@ -1,6 +1,6 @@
-package com.thousandeyes.pact.product.repository;
+package com.onlinebrewery.products.repository;
 
-import com.thousandeyes.pact.product.domain.Product;
+import com.onlinebrewery.products.domain.Product;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.thousandeyes.pact.suggestions.integration;
+package com.onlinebrewery.suggestions.integration;
 
-import com.thousandeyes.pact.suggestions.integration.dto.Product;
+import com.onlinebrewery.suggestions.integration.dto.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 

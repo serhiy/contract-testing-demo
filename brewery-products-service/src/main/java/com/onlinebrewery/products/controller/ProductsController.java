@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.product.controller;
+package com.onlinebrewery.products.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.thousandeyes.pact.product.domain.Product;
-import com.thousandeyes.pact.product.service.ProductsService;
+import com.onlinebrewery.products.domain.Product;
+import com.onlinebrewery.products.service.ProductsService;
 
 import java.util.List;
 

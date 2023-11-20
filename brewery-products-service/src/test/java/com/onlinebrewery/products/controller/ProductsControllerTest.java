@@ -1,7 +1,7 @@
-package com.thousandeyes.pact.product.controller;
+package com.onlinebrewery.products.controller;
 
-import com.thousandeyes.pact.product.domain.Product;
-import com.thousandeyes.pact.product.repository.ProductsRepository;
+import com.onlinebrewery.products.domain.Product;
+import com.onlinebrewery.products.repository.ProductsRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

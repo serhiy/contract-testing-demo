@@ -1,4 +1,4 @@
-package com.thousandeyes.pact.product.domain;
+package com.onlinebrewery.products.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
