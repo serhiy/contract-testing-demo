@@ -5,7 +5,7 @@ plugins {
 	id "au.com.dius.pact" version "4.3.6"
 }
 
-group = 'com.codingdaddy.pact'
+group = 'com.onlinebrewery.orders'
 version = '0.0.1-SNAPSHOT'
 
 java {
