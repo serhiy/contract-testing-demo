@@ -37,7 +37,7 @@ class OrdersControllerTest {
     @Test
     void shouldReturnProductsDetails() throws Exception {
         when(productsClient.getProduct(1)).thenReturn(
-                new Product(1, "Test Name", 0.50d)
+                new Product(1, "Test Name", new Product.Price(0.50d, "EUR"))
         );
 
         mockMvc.perform(post("/v1/orders")

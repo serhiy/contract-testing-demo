@@ -40,7 +40,10 @@ public class ProductsClientPactTest {
                 .body(newJsonBody(o -> {
                     o.integerType("id");
                     o.stringType("name");
-                    o.decimalType("price");
+                    o.object("price", p -> {
+                        p.decimalType("amount");
+                        p.stringType("currency");
+                    });
                 }).build())
                 .toPact(V4Pact.class);
     }

@@ -22,7 +22,7 @@ public class OrdersService {
                 .collect(Collectors.toMap(Product::getId, Product::getPrice));
 
         var totalCost = products.keySet().stream()
-                .mapToDouble(id -> costForProduct(products.get(id), productPrices.get(id)))
+                .mapToDouble(id -> costForProduct(products.get(id), productPrices.get(id).getAmount()))
                 .sum();
 
         return Order.builder()

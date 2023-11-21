@@ -44,7 +44,7 @@ class ProductsControllerTest {
     @Test
     void shouldReturnProductsList() throws Exception {
         when(productsRepository.getAll()).thenReturn(
-                List.of(new Product(1, "Test Name", "Test Description", 0.50d))
+                List.of(new Product(1, "Test Name", "Test Description", new Product.Price(0.50d, "EUR")))
         );
 
         mockMvc.perform(get("/v1/products")
@@ -55,13 +55,14 @@ class ProductsControllerTest {
                 .andExpect(jsonPath("$.[0].id", is(1)))
                 .andExpect(jsonPath("$.[0].name", is("Test Name")))
                 .andExpect(jsonPath("$.[0].description", is("Test Description")))
-                .andExpect(jsonPath("$.[0].price", is(0.50d)));
+                .andExpect(jsonPath("$.[0].price.amount", is(0.50d)))
+                .andExpect(jsonPath("$.[0].price.currency", is("EUR")));
     }
 
     @Test
     void shouldReturnProductsDetails() throws Exception {
         when(productsRepository.getProductById(1)).thenReturn(
-                Optional.of(new Product(1, "Test Name", "Test Description", 0.50d))
+                Optional.of(new Product(1, "Test Name", "Test Description", new Product.Price(0.50d, "EUR")))
         );
 
         mockMvc.perform(get("/v1/products/{id}", 1)
@@ -70,7 +71,8 @@ class ProductsControllerTest {
                 .andExpect(jsonPath("$.id", is(1)))
                 .andExpect(jsonPath("$.name", is("Test Name")))
                 .andExpect(jsonPath("$.description", is("Test Description")))
-                .andExpect(jsonPath("$.price", is(0.50d)));
+                .andExpect(jsonPath("$.price.amount", is(0.50d)))
+                .andExpect(jsonPath("$.price.currency", is("EUR")));
     }
 
     @Test

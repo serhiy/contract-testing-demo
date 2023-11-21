@@ -10,9 +10,9 @@ import java.util.Optional;
 public class ProductsRepository {
 
     private final List<Product> products = List.of(
-            new Product(1, "Weiss", "Great beer", 2.75d),
-            new Product(2, "Amber", "Also great beer", 2.75d),
-            new Product(3, "Stout", "Dark great beer", 3.40d)
+            new Product(1, "Weiss", "Great beer", new Product.Price(2.75d, "EUR")),
+            new Product(2, "Amber", "Also great beer", new Product.Price(2.75d, "EUR")),
+            new Product(3, "Stout", "Dark great beer", new Product.Price(3.40d, "EUR"))
     );
 
     public List<Product> getAll() {

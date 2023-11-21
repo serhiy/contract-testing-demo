@@ -37,7 +37,7 @@ public class OrdersContractVerificationTest {
 
     @State("product is found")
     public void existingProduct() {
-        var product = new Product(1, "test", "empty", 1.00d);
+        var product = new Product(1, "test", "empty", new Product.Price(1.00d, "EUR"));
         when(productsRepository.getProductById(any())).thenReturn(Optional.of(product));
     }
 
