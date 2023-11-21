@@ -1,9 +1,3 @@
 spring:
   main:
     allow-bean-definition-overriding: true
-
-pactbroker:
-  url: http://localhost:9292
-  auth:
-    username: user
-    password: password
